@@ -1,0 +1,317 @@
+:root {
+    --mainColor: #e4c590;
+    --textColor: #a7a7a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Forum", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title img {
+    width: 100px;
+}
+
+.title h6 {
+    color: var(--mainColor);
+    letter-spacing: 2px;
+}
+
+.underLine {
+    width: fit-content;
+    position: relative;
+    display: block;
+    margin: auto;
+    color: var(--mainColor);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.underLine:after {
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    display: block;
+    content: "";
+    border-bottom: 1px solid var(--mainColor);
+    border-top: 1px solid var(--mainColor);
+    transition-duration: 0.5s;
+}
+
+.underLine:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.mainButton {
+    display: inline-block;
+    position: relative;
+    padding: 15px 40px;
+    border: 2px solid var(--mainColor);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: transparent;
+    color: var(--mainColor);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.mainButton span {
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
+}
+
+.mainButton:hover span {
+    color: #000;
+}
+
+.mainButton:before,
+.mainButton:after {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+    z-index: 1;
+    background-color: var(--mainColor);
+    transition-duration: 0.5s;
+}
+
+.mainButton:before {
+    bottom: -50%;
+}
+
+.mainButton:after {
+    top: -50%;
+}
+
+.mainButton:hover:before {
+    bottom: 0%;
+}
+
+.mainButton:hover:after {
+    top: 0%;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
+    transform: rotate(45deg);
+}
+
+.spinner {
+    animation-name: spinning;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+section .bigTitle {
+    font-size: 50px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #0e0d0c;
+    background-image: url("../images/bg.png");
+}
+
+section:nth-of-type(2n) {
+    background-color: #171819;
+}
+
+form .input {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    border-radius: 5px;
+    color: var(--textColor);
+}
+
+form .input::placeholder {
+    color: var(--textColor);
+}
+
+form textarea {
+    resize: none;
+}
+
+form .input[type=datetime-local]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.popUp {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 15;
+    background-color: #e4c59080;
+    overflow: auto;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.popUp.active {
+    display: block;
+}
+
+.popUp.show {
+    opacity: 1;
+}
+
+.popUp .box {
+    width: 600px;
+    position: relative;
+    margin: 30px auto;
+    padding: 30px 40px;
+    background-color: #171819;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition-duration: 1s;
+}
+
+.popUp.show .box {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popUp .box>i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popUp .box p {
+    color: var(--textColor);
+}
+
+.popUp .box p a {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+.loadingScreen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainColor);
+    z-index: 10000;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.loadingScreen.hide {
+    opacity: 0;
+}
+
+.loadingScreen .loadingCircle {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-top-color: #000;
+    border-radius: 100%;
+    animation-name: spinning;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.loadingScreen .textLoading {
+    font-size: 70px;
+}
+
+.loadingScreen .textLoading span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+
+.loadingScreen .textLoading span:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: attr(data-text-preloader);
+    color: #000;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.loadingScreen .textLoading span:nth-of-type(2):after {
+    animation-delay: .2s;
+}
+
+.loadingScreen .textLoading span:nth-of-type(3):after {
+    animation-delay: .4s;
+}
+
+.loadingScreen .textLoading span:nth-of-type(4):after {
+    animation-delay: .6s;
+}
+
+.loadingScreen .textLoading span:nth-of-type(5):after {
+    animation-delay: .8s;
+}
+
+.loadingScreen .textLoading span:nth-of-type(6):after {
+    animation-delay: 1s;
+}

@@ -1,0 +1,434 @@
+@media (max-width: 1300px) {
+    .mainButton {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h6 {
+        font-size: 14px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption p {
+        font-size: 12px;
+    }
+
+    header #SC-Carousel .sc-carousel-button {
+        display: none;
+    }
+
+    header .booking {
+        width: 80px;
+        height: 80px;
+        left: 30px;
+        bottom: 30px;
+    }
+
+    header .booking img {
+        width: 40%;
+    }
+
+    header .booking p {
+        font-size: 10px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav .logo {
+        width: 40%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-bar .box {
+        width: 300px;
+    }
+
+    .side-bar .box p {
+        font-size: 14px;
+    }
+
+    .popUp .box {
+        width: 300px;
+        padding: 20px 30px;
+    }
+
+    section .globalHeader {
+        font-size: 30px;
+    }
+
+    #AboutUs .content {
+        margin-bottom: 0;
+    }
+
+    #AboutUs .content p {
+        width: initial;
+        padding: 0 30px;
+    }
+
+    #AboutUs .row .part:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    #AboutUs .row .item .img {
+        width: 270px;
+        margin: auto;
+    }
+
+    #OurStory .part p {
+        font-size: 14px;
+        padding: 0 30px;
+    }
+
+    #OurStory .part:nth-of-type(2) .item {
+        width: 270px;
+    }
+
+    #OurStory .part:nth-of-type(2) .item .rightImg {
+        width: 40%;
+    }
+
+    #OurStory .part:nth-of-type(2) .item .leftImg {
+        width: 60%;
+    }
+
+    #SpecialDish .part:nth-of-type(1) {
+        height: 100vh;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item {
+        width: 100%;
+        margin: 30px 50px;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item>img {
+        left: -20%;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item p {
+        font-size: 14px;
+    }
+
+    #Menu #SC-Slider-Navs {
+        overflow: auto;
+    }
+
+    #Menu .sc-navs {
+        min-width: fit-content;
+    }
+
+    #Menu .sc-slider-item .line {
+        display: none;
+    }
+
+    #Menu .sc-slider-item .unit {
+        margin: auto;
+    }
+
+    #Menu .sc-slider-item .unit .frame {
+        width: 80px;
+        height: 80px;
+    }
+
+    #Menu .sc-slider-item .unit .body .title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #Menu .sc-slider-item .unit .body .title span {
+        display: none;
+    }
+
+    .popUp.menu .img span {
+        font-weight: 400;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .popUp.menu .img .arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #OurChefs .chef .item {
+        width: 300px;
+        margin: auto;
+    }
+
+    #ContactUs .box {
+        width: 300px;
+    }
+
+    #ContactUs>p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    .mainButton {
+        font-size: 13px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h6 {
+        font-size: 15px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h1 {
+        font-size: 40px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption p {
+        font-size: 13px;
+    }
+
+    nav .logo {
+        width: 30%;
+    }
+
+    .popUp .box {
+        width: 400px;
+    }
+
+    section .globalHeader {
+        font-size: 35px;
+    }
+
+    #AboutUs .row .item .img {
+        width: 300px;
+        margin: auto;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item {
+        margin: 30px 60px;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item>img {
+        left: -15%;
+    }
+
+    #Menu .sc-slider-item .unit .frame {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    .mainButton {
+        font-size: 14px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h6 {
+        font-size: 16px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h1 {
+        font-size: 50px;
+    }
+
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption p {
+        font-size: 14px;
+    }
+
+    nav .logo {
+        width: 25%;
+    }
+
+    .side-bar .box {
+        width: 400px;
+    }
+
+    section .globalHeader {
+        font-size: 40px;
+    }
+
+    #AboutUs .content p {
+        padding: 0 80px;
+    }
+
+    #OurStory .part p {
+        padding: 0 50px;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item {
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item>img {
+        left: -12%;
+    }
+
+    #Menu .sc-slider-item .unit .body .title {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #Menu .sc-slider-item .unit .body .title span {
+        display: block;
+    }
+
+    .popUp.menu .img span {
+        font-size: 14px;
+    }
+
+    .popUp.menu .img .arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #ContactUs .box {
+        width: 400px;
+    }
+
+    #ContactUs>p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header #SC-Carousel .sc-carousel-item .sc-carousel-caption h1 {
+        font-size: 70px;
+    }
+
+    nav .logo {
+        width: 20%;
+    }
+
+    .popUp .box {
+        width: 500px;
+        padding: 30px 40px;
+    }
+
+    #OurStory .part p {
+        padding: 0 10px;
+    }
+
+    #OurStory .part:nth-of-type(2) .item {
+        width: 85%;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item {
+        width: 300px;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item .globalHeader {
+        font-size: 30px;
+    }
+
+    #Menu .sc-slider-item .line {
+        display: block;
+    }
+
+    #Menu .sc-slider-item .unit .body .title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #Menu .sc-slider-item .unit .body .title span {
+        display: none;
+    }
+
+    #OurChefs .chef .item {
+        width: initial;
+    }
+
+    #OurChefs .chef .item h2 {
+        font-size: 20px;
+    }
+
+    #OurChefs .chef .item span {
+        font-size: 10px;
+    }
+
+    #OurChefs .chef .item p {
+        font-size: 12px;
+    }
+
+    #OurChefs .chef .item .img .layout ul li a i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #ContactUs .box {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    nav .logo {
+        width: 15%;
+    }
+
+    section .globalHeader {
+        font-size: 50px;
+    }
+
+    #AboutUs .content p {
+        width: 35%;
+        padding: 0;
+    }
+
+    #AboutUs .content {
+        margin-bottom: -50px;
+    }
+
+    #AboutUs .row .part:nth-of-type(2) {
+        margin-top: 100px;
+    }
+
+    #OurStory .part:nth-of-type(2) .item {
+        width: 80%;
+    }
+
+    #OurStory .part:nth-of-type(2) .item .rightImg {
+        width: 35%;
+    }
+
+    #SpecialDish .part:nth-of-type(2) .item {
+        width: 350px;
+    }
+
+    #Menu .sc-slider-item .unit .frame {
+        width: 80px;
+        height: 80px;
+    }
+
+    #Menu .sc-slider-item .unit .body .title {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #Menu .sc-slider-item .unit .body .title span {
+        display: block;
+    }
+
+    #OurChefs .chef .item h2 {
+        font-size: 29px;
+    }
+
+    #OurChefs .chef .item span {
+        font-size: 12px;
+    }
+
+    #OurChefs .chef .item p {
+        font-size: 14px;
+    }
+
+    #OurChefs .chef .item .img .layout ul li a i {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}

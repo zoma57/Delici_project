@@ -944,7 +944,6 @@ header .booking p {
 }
 
 #OurChefs .chef .item .img img {
-    transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: linear;
 }
@@ -966,7 +965,6 @@ header .booking p {
     background-color: transparent;
     opacity: 0;
     transform: translate(-50%, -50%);
-    transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: linear;
 }

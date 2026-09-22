@@ -7,7 +7,7 @@ nav {
     z-index: 10;
     display: block;
     background-color: transparent;
-    color: #fff;
+    color: white;
     transform: translateY(0);
     transition-duration: 0.5s;
 }
@@ -42,7 +42,7 @@ nav ul li:not(:last-child) {
 
 nav ul li a {
     position: relative;
-    color: #fff;
+    color: white;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -88,7 +88,7 @@ nav .sideBarButton span {
     position: absolute;
     left: 0;
     display: block;
-    background-color: #fff;
+    background-color: white;
 }
 
 nav .sideBarButton span:nth-of-type(1) {
@@ -149,7 +149,7 @@ header #SC-Carousel .sc-carousel-item {
     background-repeat: no-repeat;
     z-index: 0;
     opacity: 0;
-    transform: scale(1.3);
+    transform: scale(1.4);
     transition-duration: 0.5s;
 }
 
@@ -173,7 +173,7 @@ header #SC-Carousel .sc-carousel-item:nth-of-type(3) {
 }
 
 header #SC-Carousel .sc-carousel-caption {
-    color: #fff;
+    color: white;
 }
 
 header #SC-Carousel .sc-carousel-caption .title {
@@ -274,7 +274,7 @@ header #SC-Carousel .sc-carousel-indicators ul li {
     width: 10px;
     height: 10px;
     display: block;
-    background-color: #fff;
+    background-color: white;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -361,7 +361,7 @@ header .booking p {
     text-align: center;
     background-color: #0e0d0c;
     background-image: url("../images/bg.png");
-    color: #fff;
+    color: white;
     transition-duration: 1s;
 }
 
@@ -418,7 +418,7 @@ header .booking p {
 }
 
 .side-bar .links ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -724,7 +724,7 @@ header .booking p {
 #Menu .sc-nav-item a {
     position: relative;
     font-size: 20px;
-    color: #fff;
+    color: white;
     cursor: pointer;
     text-decoration: none;
 }
@@ -840,7 +840,7 @@ header .booking p {
 
 #Menu .sc-slider-item .unit .frame .layout i {
     font-size: 25px;
-    color: #000;
+    color: black;
     cursor: pointer;
     transform: rotate(0) scale(0);
 }
@@ -907,7 +907,7 @@ header .booking p {
     justify-content: center;
     align-items: center;
     background-color: var(--mainColor);
-    color: #fff;
+    color: white;
     cursor: pointer;
     transform: rotate(45deg);
 }
@@ -930,7 +930,7 @@ header .booking p {
     right: 0;
     padding: 10px;
     background-color: var(--mainColor);
-    color: #fff;
+    color: white;
     font-weight: bolder;
     border-radius: 10px;
 }
@@ -963,7 +963,7 @@ header .booking p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff3;
+    background-color: transparent;
     opacity: 0;
     transform: translate(-50%, -50%);
     transition-property: all;
@@ -1017,7 +1017,7 @@ header .booking p {
 }
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(2) a i {
-    color: #fff;
+    color: white;
 }
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(3) a i {
@@ -1030,22 +1030,22 @@ header .booking p {
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(1) a i:hover {
     background-color: #1877f2;
-    color: #fff;
+    color: white;
 }
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(2) a i:hover {
-    background-color: #fff;
+    background-color: white;
     color: #000;
 }
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(3) a i:hover {
     background-color: #e4405f;
-    color: #fff;
+    color: white;
 }
 
 #OurChefs .chef .item .img .layout ul li:nth-of-type(4) a i:hover {
     background-color: #0a66c2;
-    color: #fff;
+    color: white;
 }
 
 #OurChefs .chef .item span {
@@ -1080,7 +1080,7 @@ header .booking p {
     left: 0;
     display: block;
     content: "";
-    background-color: #00000080;
+    background-color: black;
 }
 
 #ContactUs .box {
@@ -1125,7 +1125,7 @@ header .booking p {
 
 #ContactUs>p {
     position: relative;
-    color: #fff;
+    color: white;
 }
 
 #ContactUs>p span {

@@ -12,7 +12,7 @@ let lastScrollTop = window.scrollY,
     nextSliderBtn = document.querySelector("#SC-Carousel .sc-carousel-button.next"),
     prevSliderBtn = document.querySelector("#SC-Carousel .sc-carousel-button.prev"),
     sliderIndicators = document.querySelectorAll(".sc-carousel-indicator"),
-    menuTabs = document.querySelectorAll("#SC-Slider-Navs li.sc-nav-item");
+    menuTabs = document.querySelectorAll("#SC-Slider-Nav li.sc-nav-item");
 
 window.addEventListener("load", function () {
     setTimeout(function () {
@@ -95,42 +95,6 @@ allPopups.forEach(function (popup, index) {
     }
 });
 
-function changeSlide (direction, specificIndex) {
-    let currentSlide = document.querySelector("#SC-Carousel .sc-carousel-item.active"),
-        currentIndicator = document.querySelector(".sc-carousel-indicator.active"),
-        targetSlide,
-        targetIndicator;
-
-    if (specificIndex !== undefined && specificIndex !== null) {
-        targetSlide = document.querySelector(`.sc-carousel-item[data-item-index="${specificIndex}"]`);
-    } else if (direction === "next") {
-        if (currentSlide.nextElementSibling) {
-            targetSlide = currentSlide.nextElementSibling;
-        } else {
-            targetSlide = document.querySelector(".sc-carousel-item:first-child");
-        }
-    } else if (direction === "prev") {
-        if (currentSlide.previousElementSibling) {
-            targetSlide = currentSlide.previousElementSibling;
-        } else {
-            targetSlide = document.querySelector(".sc-carousel-item:last-child");
-        }
-    }
-
-    let targetIndex = targetSlide.getAttribute("data-item-index");
-    targetIndicator = document.querySelector(`.sc-carousel-indicator[data-item-index="${targetIndex}"]`);
-
-    currentSlide.classList.remove("active");
-    if (currentIndicator) {
-        currentIndicator.classList.remove("active");
-    }
-    
-    targetSlide.classList.add("active");
-    if (targetIndicator) {
-        targetIndicator.classList.add("active");
-    }
-}
-
 nextSliderBtn.addEventListener("click", function (e) {
     e.preventDefault();
     changeSlide("next");
@@ -151,7 +115,7 @@ sliderIndicators.forEach(function (indicator) {
 menuTabs.forEach(function (tab) {
     tab.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector("#SC-Slider-Navs li.active").classList.remove("active");
+        document.querySelector("#SC-Slider-Nav li.active").classList.remove("active");
         document.querySelector("#SC-Slider-Content .sc-slider-item.active").classList.remove("active", "show");
 
         this.classList.add("active");

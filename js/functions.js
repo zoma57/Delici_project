@@ -52,6 +52,42 @@ function updateActiveLink (sections) {
     });
 }
 
+function changeSlide (direction, specificIndex) {
+    let currentSlide = document.querySelector("#SC-Carousel .sc-carousel-item.active"),
+        currentIndicator = document.querySelector(".sc-carousel-indicator.active"),
+        targetSlide,
+        targetIndicator;
+
+    if (specificIndex !== undefined && specificIndex !== null) {
+        targetSlide = document.querySelector(`.sc-carousel-item[data-item-index="${specificIndex}"]`);
+    } else if (direction === "next") {
+        if (currentSlide.nextElementSibling) {
+            targetSlide = currentSlide.nextElementSibling;
+        } else {
+            targetSlide = document.querySelector(".sc-carousel-item:first-child");
+        }
+    } else if (direction === "prev") {
+        if (currentSlide.previousElementSibling) {
+            targetSlide = currentSlide.previousElementSibling;
+        } else {
+            targetSlide = document.querySelector(".sc-carousel-item:last-child");
+        }
+    }
+
+    let targetIndex = targetSlide.getAttribute("data-item-index");
+    targetIndicator = document.querySelector(`.sc-carousel-indicator[data-item-index="${targetIndex}"]`);
+
+    currentSlide.classList.remove("active");
+    if (currentIndicator) {
+        currentIndicator.classList.remove("active");
+    }
+    
+    targetSlide.classList.add("active");
+    if (targetIndicator) {
+        targetIndicator.classList.add("active");
+    }
+}
+
 function showMenu (menuArray, categoryName) {
     let container = document.querySelector(`.sc-slider-item.${categoryName} .row`),
         part1HTML = "",
@@ -152,3 +188,4 @@ function getPopupData (type, index) {
 
     openPopup(popupEle);
 }
+
